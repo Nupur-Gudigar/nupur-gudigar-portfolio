@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nupur Gudigar Portfolio
 
-## Getting Started
+Scrapbook-style portfolio built with Next.js where you can drag and drop stickers as you scroll through my corporate, academic, and random fun memories.
 
-First, run the development server:
+<p align="center">
+	<img src="public/images/hero/id-card.png" alt="Portfolio entry card" width="560" />
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## The Vibe
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This is not a static resume page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+It is an interactive scrapbook experience with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- A playful entry interaction with motion and transitions
+- A long-form story layout across About, Work Experience, Projects, Extras, and Contact
+- Drag-and-drop sticker interactions on desktop to personalize the page while exploring
+- Animated project cards with rich media and fun-fact storytelling
+- A dedicated "Beyond the Resume" dashboard for fun and random facts
 
-## Learn More
+## Beyond the Resume Dashboard
 
-To learn more about Next.js, take a look at the following resources:
+The portfolio includes a playful dashboard section focused on personal data and fun facts, including:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- A US travel-style map with city pins
+- A chart that breaks down how I actually spend my time (music, coding, gaming, bug-fixing, and more)
+- Random personality snapshots that make the portfolio feel more human than a typical resume site
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This section is designed to blend data storytelling with personality, so visitors get both the professional and fun side of my journey.
 
-## Deploy on Vercel
+## Dashboard Snapshots
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<p>
+	<img src="public/images/dashboard/dashboard-map.png" alt="Places I've been map" width="49%" />
+	<img src="public/images/dashboard/dashboard-time-split.png" alt="How I spend my time chart" width="49%" />
+</p>
+
+## Scrapbook Preview
+
+<p align="center">
+	<img src="public/images/hero/pixel-hand.png" alt="Pixel hand interaction cue" width="140" />
+	<img src="public/images/hero/polaroid-frame.png" alt="Polaroid scrapbook frame" width="220" />
+</p>
+
+<p align="center">A few of the stickers used in the scrapbook experience:</p>
+
+<p align="center">
+	<img src="public/images/Rectangle%20155.svg" alt="Scrapbook sticker 1" width="88" />
+	<img src="public/images/Rectangle%20159.svg" alt="Scrapbook sticker 2" width="88" />
+	<img src="public/images/Rectangle%20114.svg" alt="Scrapbook sticker 3" width="88" />
+	<img src="public/images/Rectangle%20157.svg" alt="Scrapbook sticker 4" width="88" />
+	<img src="public/images/Rectangle%20161.svg" alt="Scrapbook sticker 5" width="88" />
+</p>
+
+## Project Memory Wall
+
+These are some featured projects shown in the portfolio:
+
+<p>
+	<img src="public/images/projects/new-skating-poster.jpg" alt="Olympic Figure Skating Analysis" width="32%" />
+	<img src="public/images/projects/spintember-poster.jpg" alt="Spintember" width="32%" />
+	<img src="public/images/projects/hear-screen-poster.jpg" alt="Heart Screen" width="32%" />
+</p>
+<p>
+	<img src="public/images/projects/kirby-poster.jpg" alt="Kirby Visualizer" width="32%" />
+</p>
+
+## Built With
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+- Chart.js + react-chartjs-2
+- d3-geo + topojson-client
+- Upstash Redis (view counter API)
+
+## Contact
+
+- GitHub: https://github.com/Nupur-Gudigar
+- LinkedIn: https://www.linkedin.com/in/nupur-gudigar
+- Email: nupurgudigar.tech@gmail.com
+
+---
+
+If you are here to evaluate the portfolio professionally, start with the work timeline and projects.
+If you are here for the fun version, drag a sticker and make the page yours.
