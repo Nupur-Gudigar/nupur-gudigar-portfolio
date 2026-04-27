@@ -115,6 +115,8 @@ const projects = [
     description:
       "An exploratory data analysis project visualizing YouTube channel data through interactive Plotly charts. The project examines subscriber distributions, content categories, and channel growth patterns to highlight key trends in platform popularity.",
     gif: "/images/projects/youtube-stats.gif",
+    mp4: "/images/projects/youtube-stats.mp4",
+    poster: "/images/projects/youtube-stats-poster.jpg",
     github: "https://github.com/Nupur-Gudigar/youtube-analysis",
     live: "https://colab.research.google.com/github/Nupur-Gudigar/youtube-analysis/blob/main/Visualize_Youtube_Data_with_Plotly.ipynb",
     tags: [
@@ -633,6 +635,7 @@ function ProjectCarousel() {
   };
   const project = projects[current];
   const shouldUseVideo = Boolean(project.mp4) && !failedMp4s[project.title];
+  const fallbackMedia = project.poster ?? project.gif;
   const hasFunFact = project.description.includes("Fun Fact:");
   const useCompactMobileCopy = hasFunFact || project.description.length > 290;
   const isOlympicProject = project.title.includes("Olympic Figure Skating");
@@ -642,8 +645,10 @@ function ProjectCarousel() {
 
   useEffect(() => {
     projects.forEach((p) => {
+      const previewSrc = p.poster ?? p.gif;
+      if (!previewSrc) return;
       const img = new window.Image();
-      img.src = p.gif;
+      img.src = previewSrc;
     });
   }, []);
 
@@ -736,13 +741,20 @@ function ProjectCarousel() {
                       }
                       style={{ width: "100%", height: "auto", display: "block" }}
                     />
-                  ) : (
+                  ) : fallbackMedia ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
-                      src={project.gif}
+                      src={fallbackMedia}
                       alt={project.title}
                       style={{ width: "100%", height: "auto", display: "block" }}
                     />
+                  ) : (
+                    <div
+                      className="flex items-center justify-center px-6 py-20 text-center text-white"
+                      style={{ backgroundColor: "#111" }}
+                    >
+                      Media preview unavailable
+                    </div>
                   )}
                 </div>
               </div>
