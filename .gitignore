@@ -29,6 +29,11 @@ public/images/projects/*.optimized.mp4
 *.zip
 test-results/
 mobile-*.png
+AGENTS.md
+CLAUDE.md
+public/vercel.svg
+public/file.svg
+public/window.svg
 
 # debug
 npm-debug.log*
