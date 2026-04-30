@@ -1,4 +1,4 @@
-# Nupur Gudigar Portfolio
+# Nupur Gudigar Portfolio [![Image of my-views-counter](https://github.com/Nupur-Gudigar/my-views-counter/blob/master/svg/1222667147/badge.svg)](https://github.com/Nupur-Gudigar/my-views-counter/blob/master/readme/1222667147/week.md)
 
 Scrapbook-style portfolio built with Next.js where you can drag and drop stickers as you scroll through my corporate, academic, and random fun memories.
 
